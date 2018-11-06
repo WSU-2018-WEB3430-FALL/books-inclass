@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Book } from '../book';
 
 @Component({
@@ -8,9 +8,14 @@ import { Book } from '../book';
 })
 export class BookFormComponent implements OnInit {
   @Input() book: Book;
+  @Output() cancel = new EventEmitter<Book>();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  cancelSelection(book: Book): void{
+    this.cancel.emit(book);
   }
 
 }

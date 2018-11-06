@@ -15,9 +15,9 @@
     </div>
     <div class="form-group">
         <label for="isbnattr">ISBN</label>
-        <input type="text" class="form-control" id="isbnattr" name="isbn" [(ngModel)]="book.ispn">
+        <input type="text" class="form-control" id="isbnattr" name="isbn" [(ngModel)]="book.isbn">
       </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" (click)="cancelSelection(book)">Submit</button>
   </form>
 </div>
   

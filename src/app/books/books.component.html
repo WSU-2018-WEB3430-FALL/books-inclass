@@ -20,4 +20,4 @@
     </tbody>
   </table>
 
-  <app-book-form [book]="selectedBook"></app-book-form>
+  <app-book-form [book]="selectedBook" (cancel)="unselect(book)"></app-book-form>

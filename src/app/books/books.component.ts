@@ -21,4 +21,8 @@ export class BooksComponent implements OnInit {
     this.selectedBook = book;
   }
 
+  unselect(book: Book): void {
+    this.selectedBook = null;
+  }
+
 }
