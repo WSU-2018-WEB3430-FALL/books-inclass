@@ -13,4 +13,8 @@ export class BooksService {
   getBooks(): Observable<Array<Book>> {
     return of(SAMPLE_BOOKS)
   }
+
+  getBook(id: number): Observable<Book> {
+    return of(SAMPLE_BOOKS.find(book => id === book.id));
+  }
 }
