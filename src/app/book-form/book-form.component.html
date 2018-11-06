@@ -1,0 +1,24 @@
+<div *ngIf="book">
+  <h1>Book Form</h1>
+  <form>
+    <div class="form-group">
+      <label for="idattr">ID</label>
+      <input type="text" class="form-control" id="idattr" name="id" [(ngModel)]="book.id">
+    </div>
+    <div class="form-group">
+      <label for="titleattr">Title</label>
+      <input type="text" class="form-control" id="titleattr" name="title" [(ngModel)]="book.title">
+    </div>
+    <div class="form-group">
+      <label for="authorattr">Author</label>
+      <input type="text" class="form-control" id="authorattr" name="author" [(ngModel)]="book.author">
+    </div>
+    <div class="form-group">
+        <label for="isbnattr">ISBN</label>
+        <input type="text" class="form-control" id="isbnattr" name="isbn" [(ngModel)]="book.ispn">
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+  
+
